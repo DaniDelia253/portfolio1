@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-yellow: rgba(255,191,75,1);
+    --main-orange: rgba(255,151,95,1);
+    --main-red: rgba(255,103,84,1);
+}
+
+body {
+    font-family: "Gill Sans", sans-serif;
+}
+
+/* header and navigation styles start */
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 36px; 
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav {
+    margin: 5px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav li a {
+    padding: 5px 10px;
+    font-weight: lighter;
+    font-size: 1.75vw;
+}
+
+/* header and nav styles end */
+
+/* footer styles start */
+footer {
+    background-color: var(--main-orange);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+footer h2 span {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+/* end footer styles */
+
+/* hero styles start */
+.hero-section {
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.hero-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+    color:white;
+    width: 60%;
+    padding: 10px;
+}
+
+.hero-text h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    font-size: 34px;
+}
+
+.hero-section img {
+    max-height: 450px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
