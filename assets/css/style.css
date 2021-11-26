@@ -420,12 +420,9 @@ footer h2 span {
         margin: 30px auto;
         width:100%; 
     }
-
-
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
-
 @media screen and (max-width: 768px) {
     .rotated-header {
         writing-mode: inherit;
@@ -444,8 +441,6 @@ footer h2 span {
 
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
- 
-
     .intro-content, .work-content, .contact-content {
         margin: 20px 0;
         padding: 0;
