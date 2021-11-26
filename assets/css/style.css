@@ -1,3 +1,5 @@
+/* STYLES FOR ALL ELEMENTS */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +17,8 @@ body {
     font-family: "Gill Sans", sans-serif;
 }
 
-/* header and navigation styles start */
+
+/* HEADER AND NAVIGATION STYLES START */
 
 header {
     padding: 10px;
@@ -71,7 +74,8 @@ header nav li a {
 
 /* header and nav styles end */
 
-/* footer styles start */
+/* FOOTER STYLES START */
+
 footer {
     background-color: var(--main-red);
     padding: 5px;
@@ -96,7 +100,8 @@ footer h2 span {
 
 /* end footer styles */
 
-/* hero styles start */
+
+/* HERO STYLES START */
 .hero-section {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
@@ -143,6 +148,7 @@ footer h2 span {
 /* hero styles end */
 
 
+/* STYLES FOR ALL ROTATED HEADERS START */
 .rotated-header {
     writing-mode: vertical-rl;
     text-align: center;
@@ -159,10 +165,12 @@ footer h2 span {
     color: white;
 }
 
-/* about-me styles start */
+
+/* ABOUT-ME SECTION STYLES START */
 
 .intro {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 30px 0;
@@ -174,7 +182,7 @@ footer h2 span {
 
 .intro-content {
     margin: 30px 0 30px 50px;
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -185,6 +193,7 @@ footer h2 span {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-weight: lighter;
     font-size: 25px;
+    text-align: justify;
     color:var(--grey-text);
     height: 40%;
     margin-bottom: 20px;
@@ -228,11 +237,12 @@ footer h2 span {
 
 
 
+/* MY-WORK SECTION STYLES START */
 
-/* my work section starts */
-
+/* styles for the whole my-work section */
 .work {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 30px 0;
@@ -244,7 +254,7 @@ footer h2 span {
 
 .work-content {
     margin: 30px 0 30px 50px;
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -252,14 +262,27 @@ footer h2 span {
     justify-content: space-between;
 }
 
+/* styles for project labels */
+.project-label {
+    position: absolute;
+    bottom: 6px;
+    left: 2px;
+    background-color: var(--main-orange);
+    padding: 7px;
+    color: var(--grey-text);
+}
+
+/* styles for 2nd row of projects */
 .secondary-projects {
     display: flex;
     flex-wrap: nowrap;
 }
 
+/*run-buddy project styles */
 #run-buddy-image-container {
     position: relative;
     margin: 0 auto;
+    max-width: 90%;
     
 }
 
@@ -275,20 +298,12 @@ footer h2 span {
     border: 8px solid var(--main-orange);
 }
 
-#run-buddy-label {
-    position: absolute;
-    bottom: 6px;
-    left: 2px;
-    background-color: var(--main-orange);
-    padding: 7px;
-    color: var(--grey-text);
-}
 
 
+/* project 2 placeholder styles */
 #project-2-image-container {
     position: relative;
     margin: 20px;
-    
 }
 
 #project-2-screenshot {
@@ -303,15 +318,7 @@ footer h2 span {
     border: 8px solid var(--main-orange);
 }
 
-#project-2-label {
-    position: absolute;
-    bottom: 6px;
-    left: 2px;
-    background-color: var(--main-orange);
-    padding: 7px;
-    color: var(--grey-text);
-}
-
+/* project 3 placeholder styles */
 #project-3-image-container {
     position: relative;
     margin: 20px;
@@ -329,24 +336,14 @@ footer h2 span {
     border: 8px solid var(--main-orange);
 }
 
-#project-3-label {
-    position: absolute;
-    bottom: 6px;
-    left: 2px;
-    background-color: var(--main-orange);
-    padding: 7px;
-    color: var(--grey-text);
-}
-
-
 /* my work section ends */
 
 
-
-/* contact-me section styles start */
+/* CONTACT-ME SECTION STYLES START */
 
 .contact {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 30px 0;
@@ -359,13 +356,14 @@ footer h2 span {
 
 .contact-content {
     margin: 30px 0 30px 50px;
-    width: 60%;
+    width: 70%;
     height: 60%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-evenly;
 }
+
 
 .contact-content a {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
@@ -386,6 +384,106 @@ footer h2 span {
     color: var(--main-red);
 }
 
-
-
 /* contact-me section styles end */
+
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 22px;
+      margin: 15px;
+    }
+
+    .hero-transparent-section {
+        margin: 0 100px;   
+    }
+    .intro, .work, .contact {
+        justify-content: center;
+        margin: 30px auto;
+        width:100%; 
+    }
+
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+
+@media screen and (max-width: 768px) {
+    .rotated-header {
+        writing-mode: inherit;
+        transform: inherit;
+        width: 80%;
+    }
+
+    .intro-content, .work-content, .contact-content {
+        margin: 30px 0;
+        width: 70%;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+ 
+
+    .intro-content, .work-content, .contact-content {
+        margin: 20px 0;
+        padding: 0;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .intro-content p {
+      width: 85%;
+      font-size: 20px;
+    }
+
+    .intro-content a, .contact-content a {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .intro-content-skills {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+
+    .intro-content-skills h3 {
+        font-size: 20px;
+    }
+
+    .intro-content-skills img {
+        max-height: 55px;
+    }
+
+    .project-label h3, p {
+        font-size: 10px;
+    }
+
+    .contact-content a {
+        margin: 5px
+    }
+
+  }
