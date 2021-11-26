@@ -98,6 +98,7 @@ footer h2 span {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .hero-transparent-section {
@@ -131,3 +132,142 @@ footer h2 span {
     box-shadow: 20px 10px 0 var(--main-orange);
 }
 
+/* hero styles end */
+
+
+.rotated-header {
+    writing-mode: vertical-rl;
+    text-align: center;
+    transform:rotate(180deg);
+    flex-grow: 0;
+    height: 90%;
+    max-height: 500px;
+}
+
+.rotated-header h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 35px;
+    color: white;
+}
+
+/* about-me styles start */
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+#about-me-header {
+    background-color: var(--main-yellow);
+}
+
+.intro-content {
+    margin: 30px 0 30px 50px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.intro-content p {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+    color:rgb(80, 80, 80);
+    height: 40%;
+    margin: 20px;
+    margin-right: 0;
+}
+
+.intro-content a {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    color:white;
+    background-color: var(--main-red);
+    border: 5px solid white;
+    text-decoration: none;
+    padding: 10px;
+    height: 20%
+}
+
+#resume-button:hover {
+    background-color: white;
+    border: 5px solid var(--main-red);
+    color: var(--main-red);
+}
+
+.intro-content div {
+    height: 35%;
+    margin: 20;
+}
+.intro-content-skills h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    color:rgb(80, 80, 80);
+    margin: 20px;
+}
+
+.intro-content-skills img {
+    max-height: 100px;
+}
+
+/* about me styles end */
+
+
+
+
+/* my work section starts */
+
+.work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+#my-work-header {
+    background-color: var(--main-orange);
+}
+
+.work-content {
+    margin: 30px 0 30px 50px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* my work section ends */
+
+
+
+/* contact-me section styles start */
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+#contact-me-header {
+    background-color: var(--main-red);
+}
+
+.contact-content {
+    margin: 30px 0 30px 50px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* contact-me section styles start */
