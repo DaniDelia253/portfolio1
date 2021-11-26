@@ -415,6 +415,7 @@ footer h2 span {
     .hero-transparent-section {
         margin: 0 100px;   
     }
+
     .intro, .work, .contact {
         justify-content: center;
         margin: 30px auto;
@@ -441,6 +442,39 @@ footer h2 span {
 
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
+    header nav ul li a {
+        font-size: 18px;
+        margin: 0;
+    }
+  
+    .hero-transparent-section {
+        margin: 0 30px;
+        justify-content: center;   
+    }
+
+    .hero-section img {
+        max-height: 250px;
+        box-shadow: 10px 7px 0 var(--main-orange);
+        max-width: 35%;
+    }
+
+    .hero-text {
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-weight: lighter;
+        max-width: 65%;
+        padding: 15px 5px 0 30px;
+        color:var(--grey-text);
+    }
+    
+    .hero-text p {
+        font-size: 16px;
+    }
+    .hero-text h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-weight: normal;
+        font-size: 22px;
+    }
+    
     .intro-content, .work-content, .contact-content {
         margin: 20px 0;
         padding: 0;
